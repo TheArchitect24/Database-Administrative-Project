@@ -33,10 +33,8 @@ The repository includes:
    sudo nano /etc/postgresql/*/main/pg_hba.conf  # set-listen_addresses = '*'
    sudo service postgresql restart      # set -host all all 0.0.0.0/0 md5
   ```
-  - Create a new server on pgadmin
-  - using relevant wsl access credentials
-
- 
+   #Create a new server on pgadmin
+   #Using relevant wsl access credentials 
    ```
 ### My SQL (WSL)
 
