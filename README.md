@@ -29,27 +29,22 @@ The repository includes:
    ```
 3. **Allow external connections (for pgAdmin on Windows)**
    ```bash
-   sudo nano /etc/postgresql/*/main/postgresql.conf
-     # set-listen_addresses = '*' 
-   sudo nano /etc/postgresql/*/main/pg_hba.conf
-     # set -host all all 0.0.0.0/0 md5
-  sudo service postgresql restart
+   sudo nano /etc/postgresql/*/main/postgresql.conf 
+   sudo nano /etc/postgresql/*/main/pg_hba.conf  # set-listen_addresses = '*'
+   sudo service postgresql restart      # set -host all all 0.0.0.0/0 md5
   ```
-4. **Connect via pgAdmin4 (Windows Desktop client)**
-    - Use WSL IP ```hostname -I```
-    - Default user postgres
+  - Create a new server on pgadmin
+  - using relevant wsl access credentials
 
-### 📌 MySQL (WSL)
+ 
+   ```
+### My SQL (WSL)
 
-1. **Install MySQL**
+1. **Access CLI**
    ```bash
    sudo apt update && sudo apt install mysql-server -y
    sudo service mysql start
-   ```
-2. **Access CLI**
-   ```bash
    mysql -u root -p
    ```
-
    
 
